@@ -451,3 +451,460 @@ ActionView::MissingTemplate (Missing template pages/index.erb in view path app/v
   /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (internal_server_error)
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-08-23 14:52:00) [GET]
+Rendering tweets/index
+
+ActionView::TemplateError (No element matched the given selector: "div.tweet") on line #4 of app/views/tweets/index.html.effigy:
+1: class TweetsIndexView < Effigy::Rails::View
+2: 	def	transform
+3:     text('h1', 'Tweets')	  
+4:     find('div.tweet').replace_each(@tweets) do |tweet|
+5:       text('strong', tweet.from_user)
+6:       text('p', tweet.text)
+7:     end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:72:in `replace_each'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/tweets/index.html.effigy:4:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/tweets/index.html.effigy:12:in `_run_effigy_app47views47tweets47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (108.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-08-23 14:57:03) [GET]
+Rendering tweets/index
+Completed in 799ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 14:57:20) [GET]
+Rendering magic/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/magic]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-23 14:59:01) [GET]
+
+ActionController::RoutingError (No route matches "/twitter" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-08-23 14:59:07) [GET]
+Rendering tweets/index
+Completed in 1099ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-08-23 15:00:22) [GET]
+Rendering tweets/index
+
+ActionView::TemplateError (No element matched the given selector: "div.tweet") on line #4 of app/views/tweets/index.html.effigy:
+1: class TweetsIndexView < Effigy::Rails::View
+2: 	def	transform
+3:     text('h1', 'Tweets')	  
+4:     find('div.tweet').replace_each(@tweets) do |tweet|
+5:       text('strong', tweet.from_user)
+6:       text('p', tweet.text)
+7:     end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:72:in `replace_each'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/tweets/index.html.effigy:4:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/tweets/index.html.effigy:12:in `_run_effigy_app47views47tweets47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-08-23 15:02:15) [GET]
+Rendering tweets/index
+
+ActionView::TemplateError (No element matched the given selector: "div.tweet") on line #4 of app/views/tweets/index.html.effigy:
+1: class TweetsIndexView < Effigy::Rails::View
+2: 	def	transform
+3:     text('h1', 'Tweets')	  
+4:     find('div.tweet').replace_each(@tweets) do |tweet|
+5:       text('strong', tweet.from_user)
+6:       text('p', tweet.text)
+7:     end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:72:in `replace_each'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/tweets/index.html.effigy:4:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/tweets/index.html.effigy:12:in `_run_effigy_app47views47tweets47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (107.7ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-08-23 15:03:26) [GET]
+Rendering tweets/index
+
+ActionView::TemplateError (No element matched the given selector: "tweet") on line #4 of app/views/tweets/index.html.effigy:
+1: class TweetsIndexView < Effigy::Rails::View
+2: 	def	transform
+3:     text('h1', 'Tweets')	  
+4:     find('tweet').replace_each(@tweets) do |tweet|
+5:       text('strong', tweet.from_user)
+6:       text('p', tweet.text)
+7:     end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:72:in `replace_each'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/tweets/index.html.effigy:4:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/tweets/index.html.effigy:12:in `_run_effigy_app47views47tweets47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:04:39) [GET]
+Rendering magic/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:15:38) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "p.body") on line #6 of app/views/magic/index.html.effigy:
+3:   def transform
+4:     text('h1', @spell)
+5:     text('title', @title)
+6:     text('p.body', @description)
+7:     remove('#no-comments')
+8:   end
+9: end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:17:23) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "div.comment") on line #6 of app/views/magic/index.html.effigy:
+3:   def transform
+4:     text('h1', @spell)
+5:     text('title', @title)
+6:     text('div.comment', @description)
+7:     remove('#no-comments')
+8:   end
+9: end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:17:43) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "#no-comments") on line #7 of app/views/magic/index.html.effigy:
+4:     text('h1', @spell)
+5:     text('title', @title)
+6: #    text('div.comment', @description)
+7:     remove('#no-comments')
+8:   end
+9: end
+
+    effigy (0.4.0) lib/effigy/view.rb:258:in `select_all'
+    effigy (0.4.0) lib/effigy/view.rb:102:in `remove'
+    app/views/magic/index.html.effigy:7:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:17:58) [GET]
+Rendering magic/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:18:45) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (undefined local variable or method `post' for #<MagicIndexView:0xb6f224a0>) on line #7 of app/views/magic/index.html.effigy:
+4:     text('h1', @spell)
+5:     text('title', @title)
+6: #    text('div.comment', @description)
+7:     remove('#no-comments') if post.comments.empty?
+8:   end
+9: end
+
+    app/views/magic/index.html.effigy:7:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:20:18) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (undefined method `comments' for nil:NilClass) on line #7 of app/views/magic/index.html.effigy:
+4:     text('h1', @spell)
+5:     text('title', @title)
+6: #    text('div.comment', @description)
+7:     remove('#no-comments') if p.comments.empty?
+8:   end
+9: end
+
+    app/views/magic/index.html.effigy:7:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:21:03) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #7 of app/views/magic/index.html.effigy:
+4:     text('h1', @spell)
+5:     text('title', @title)
+6: #    text('div.comment', @description)
+7:     remove('#no-comments') if p.empty?
+8:   end
+9: end
+
+    app/views/magic/index.html.effigy:7:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:21:18) [GET]
+Rendering magic/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:21:59) [GET]
+Rendering magic/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:23:23) [GET]
+Rendering magic/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:24:10) [GET]
+Rendering magic/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:25:05) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "p.titulo") on line #6 of app/views/magic/index.html.effigy:
+3:   def transform
+4:     text('h1', @spell)
+5:     text('title', 'Título da Página (ABA)')
+6:     text('p.titulo', @titulo )
+7: #    text('div.comment', @description)
+8:   end
+9: end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:56:07) [GET]
+Rendering magic/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:56:12) [GET]
+Rendering magic/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/magic]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-23 15:56:15) [GET]
+
+ActionController::RoutingError (No route matches "/magics" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:56:16) [GET]
+Rendering magic/index
+Completed in 15ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/magic]
