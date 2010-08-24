@@ -908,3 +908,404 @@ Rendering rescues/layout (not_found)
 Processing MagicController#index (for 127.0.0.1 at 2010-08-23 15:56:16) [GET]
 Rendering magic/index
 Completed in 15ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/magic]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 16:11:02) [GET]
+Rendering magic/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/magic]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 16:35:14) [GET]
+Rendering magic/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 16:35:29) [GET]
+Rendering magic/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 16:36:37) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "p.um") on line #6 of app/views/magic/index.html.effigy:
+3: class MagicIndexView < Effigy::Rails::View
+4:   def transform
+5:     find('h1').text(@spell)
+6:     find('p.um').text("ASASF")
+7:   end
+8: end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.1ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 16:37:17) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "p#um") on line #6 of app/views/magic/index.html.effigy:
+3: class MagicIndexView < Effigy::Rails::View
+4:   def transform
+5:     find('h1').text(@spell)
+6:     find('p#um').text("ASASF")
+7:   end
+8: end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 16:37:23) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (unexpected '@um' after '#<Nokogiri::CSS::Node:0xb6dad674>') on line #6 of app/views/magic/index.html.effigy:
+3: class MagicIndexView < Effigy::Rails::View
+4:   def transform
+5:     find('h1').text(@spell)
+6:     find('p@um').text("ASASF")
+7:   end
+8: end
+
+    nokogiri (1.4.3.1) lib/nokogiri/css/parser.rb:78:in `on_error'
+    /usr/lib/ruby/1.8/racc/parser.rb:99:in `_racc_do_parse_c'
+    /usr/lib/ruby/1.8/racc/parser.rb:99:in `__send__'
+    /usr/lib/ruby/1.8/racc/parser.rb:99:in `do_parse'
+    nokogiri (1.4.3.1) lib/nokogiri/css/generated_tokenizer.rb:30:in `parse'
+    nokogiri (1.4.3.1) lib/nokogiri/css/parser.rb:70:in `xpath_for'
+    nokogiri (1.4.3.1) lib/nokogiri/css.rb:21:in `xpath_for'
+    nokogiri (1.4.3.1) lib/nokogiri/xml/node.rb:102:in `search'
+    nokogiri (1.4.3.1) lib/nokogiri/xml/node.rb:100:in `map'
+    nokogiri (1.4.3.1) lib/nokogiri/xml/node.rb:100:in `search'
+    nokogiri (1.4.3.1) lib/nokogiri/xml/node.rb:204:in `at'
+    effigy (0.4.0) lib/effigy/view.rb:246:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 16:37:36) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (undefined method `um' for nil:NilClass) on line #6 of app/views/magic/index.html.effigy:
+3: class MagicIndexView < Effigy::Rails::View
+4:   def transform
+5:     find('h1').text(@spell)
+6:     find(p.um).text("ASASF")
+7:   end
+8: end
+
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 16:37:45) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "um") on line #6 of app/views/magic/index.html.effigy:
+3: class MagicIndexView < Effigy::Rails::View
+4:   def transform
+5:     find('h1').text(@spell)
+6:     find('um').text("ASASF")
+7:   end
+8: end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 16:45:47) [GET]
+Rendering magic/index
+Completed in 89ms (View: 86, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 16:46:07) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (wrong number of arguments (2 for 1)) on line #6 of app/views/magic/index.html.effigy:
+3: class MagicIndexView < Effigy::Rails::View
+4:   def transform
+5:     find('h1').text(@spell)
+6:     find('p','um').text("ASASF")
+7:   end
+8: end
+
+    app/views/magic/index.html.effigy:6:in `find'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-23 16:46:20) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "p.um") on line #6 of app/views/magic/index.html.effigy:
+3: class MagicIndexView < Effigy::Rails::View
+4:   def transform
+5:     find('h1').text(@spell)
+6:     find('p.um').text("ASASF")
+7:   end
+8: end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (107.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-24 16:39:39) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "p.body") on line #6 of app/views/magic/index.html.effigy:
+3: class MagicIndexView < Effigy::Rails::View
+4:   def transform
+5:     text('h1', @spell)
+6:     find('p.body').text("New text");
+7:   end
+8: end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (114.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-24 16:39:41) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "p.body") on line #6 of app/views/magic/index.html.effigy:
+3: class MagicIndexView < Effigy::Rails::View
+4:   def transform
+5:     text('h1', @spell)
+6:     find('p.body').text("New text");
+7:   end
+8: end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-24 16:40:02) [GET]
+Rendering magic/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-24 16:40:11) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "p.body") on line #6 of app/views/magic/index.html.effigy:
+3: class MagicIndexView < Effigy::Rails::View
+4:   def transform
+5:     text('h1', @spell)
+6:     find('p.body').text("New text");
+7:   end
+8: end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `send'
+    effigy (0.4.0) lib/effigy/selection.rb:35:in `method_missing'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (114.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MagicController#index (for 127.0.0.1 at 2010-08-24 16:41:18) [GET]
+Rendering magic/index
+
+ActionView::TemplateError (No element matched the given selector: "p.body") on line #6 of app/views/magic/index.html.effigy:
+3: class MagicIndexView < Effigy::Rails::View
+4:   def transform
+5:     text('h1', @spell)
+6:     text('p.body', "New text");
+7:   end
+8: end
+
+    effigy (0.4.0) lib/effigy/view.rb:247:in `select'
+    effigy (0.4.0) lib/effigy/view.rb:36:in `text'
+    app/views/magic/index.html.effigy:6:in `transform'
+    effigy (0.4.0) lib/effigy/view.rb:90:in `render'
+    app/views/magic/index.html.effigy:12:in `_run_effigy_app47views47magic47index46html46effigy'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
